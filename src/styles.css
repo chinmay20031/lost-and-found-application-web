@@ -26,7 +26,7 @@ a { color: inherit; }
 .site-shell { max-width: 1240px; margin: 0 auto; padding: 0 42px; }
 .topbar { height: 82px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(31,43,39,.08); }
 .brand-link { text-decoration: none; }
-.brand { display: inline-flex; gap: 9px; align-items: center; color: var(--green); font-family: Manrope, sans-serif; font-size: 23px; font-weight: 800; letter-spacing: -1.4px; }
+.brand { display: inline-flex; gap: 9px; align-items: center; color: var(--green); font-family: Manrope, sans-serif; font-size: 20px; font-weight: 800; letter-spacing: -.7px; }
 .brand-mark { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; background: var(--green); color: #fff; }
 .brand-period { color: #c89262; }
 .topbar-actions { display: flex; align-items: center; gap: 15px; }
@@ -223,7 +223,7 @@ footer > a { margin-left: auto; color: var(--green); font-size: 11px; text-decor
 @media (max-width: 650px) {
   .site-shell { padding: 0 16px; }
   .topbar { height: 68px; }
-  .brand { font-size: 20px; }
+  .brand { font-size: 15px; letter-spacing: -.5px; }
   .brand-mark { width: 31px; height: 31px; }
   .topbar-actions { gap: 4px; }
   .signed-in { display: none; }

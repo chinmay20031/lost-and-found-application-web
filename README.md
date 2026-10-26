@@ -1,4 +1,4 @@
-# Goodfind web
+# RECOVERED ITEMS web
 
 React + TypeScript + Vite client for the same Supabase project used by the Android app. It uses the existing `reports`, `claims`, and `report_contacts` schema, `create_report`/claim/handover RPCs, and public `report-images` Storage bucket. No separate backend or migration is required.
 

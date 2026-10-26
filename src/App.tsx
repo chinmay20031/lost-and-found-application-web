@@ -67,7 +67,7 @@ function SetupNotice() {
       <div className="setup-card">
         <Brand />
         <p className="eyebrow">One small setup step</p>
-        <h1>Connect Goodfind to your community.</h1>
+        <h1>Connect RECOVERED ITEMS to your community.</h1>
         <p>Add the public Supabase project URL and anon or publishable key to <code>web/.env.local</code>, then restart the dev server.</p>
         <pre>VITE_SUPABASE_URL=https://your-project.supabase.co{"\n"}VITE_SUPABASE_ANON_KEY=your-public-key</pre>
         <p className="fine-print">Use the same Supabase project as the Android app. Never place a service-role or secret key in browser code.</p>
@@ -240,14 +240,14 @@ function Goodfind({ client }: { client: Client }) {
   };
 
   if (!authReady) {
-    return <div className="app-loading" role="status">Loading Goodfind…</div>;
+    return <div className="app-loading" role="status">Loading RECOVERED ITEMS…</div>;
   }
 
   return (
     <>
       <div className="site-shell">
         <header className="topbar">
-          <a className="brand-link" href="#" aria-label="Goodfind home"><Brand /></a>
+          <a className="brand-link" href="#" aria-label="RECOVERED ITEMS home"><Brand /></a>
           <nav className="topbar-actions" aria-label="Account">
             {user ? (
               <>
@@ -361,7 +361,7 @@ function Goodfind({ client }: { client: Client }) {
 }
 
 function Brand() {
-  return <span className="brand"><span className="brand-mark"><Icon name="leaf" size={22} /></span><span>goodfind<span className="brand-period">.</span></span></span>;
+  return <span className="brand"><span className="brand-mark"><Icon name="leaf" size={22} /></span><span>RECOVERED ITEMS</span></span>;
 }
 
 function ReportCard({
@@ -563,7 +563,7 @@ function AuthDialog({ client, mode, onModeChange, onClose }: {
       <div className="auth-links">
         {mode === "signin" && <button className="text-action" onClick={() => { setFeedback(""); onModeChange("reset"); }}>Forgot password?</button>}
         {mode === "reset" && <button className="text-action" onClick={() => { setFeedback(""); onModeChange("signin"); }}>Back to sign in</button>}
-        {mode !== "reset" && <p>{mode === "signup" ? "Already have an account?" : "New to Goodfind?"} <button className="text-action" onClick={() => { setFeedback(""); onModeChange(mode === "signup" ? "signin" : "signup"); }}>{mode === "signup" ? "Sign in" : "Create an account"}</button></p>}
+        {mode !== "reset" && <p>{mode === "signup" ? "Already have an account?" : "New to RECOVERED ITEMS?"} <button className="text-action" onClick={() => { setFeedback(""); onModeChange(mode === "signup" ? "signin" : "signup"); }}>{mode === "signup" ? "Sign in" : "Create an account"}</button></p>}
       </div>
       <p className="fine-print">Your contact information is shared only with the person whose claim you accept.</p>
     </Modal>
